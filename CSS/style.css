@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e9ecef;
+  color: #212529;
+}
+/* -------------------------
+           HEADER
+------------------------------------ */
+header {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  z-index: 999;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding: 1.2rem 2.4rem;
+  display: flex;
+  gap: 4rem;
+}
+.logo {
+  width: 85%;
+}
+.search-icon,
+.shop-icon,
+.customer-icon,
+.cart-icon,
+.three-dots {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #212529;
+}
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon::after {
+  position: absolute;
+  top: -0.3rem;
+  right: 0;
+  content: "23";
+  background-color: #f03e3e;
+  font-size: 1rem;
+  height: 1rem;
+  width: 1rem;
+  padding: 0.2rem;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.three-dots {
+  padding: 0.8rem 0.4rem;
+  transition: background-color 0.2s;
+}
+.three-dots:hover {
+  background-color: #e9ecef;
+  border-radius: 0.9rem;
+}
+header div,
+p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #212529;
+}
+.customer {
+  transition: background-color 0.2s;
+  padding: 0.8rem 0.4rem;
+}
+.customer:hover {
+  background-color: #e9ecef;
+  border-radius: 0.9rem;
+}
+header input {
+  height: 2rem;
+  font-family: inherit;
+  width: 60rem;
+  padding: 2rem 0rem;
+  border: none;
+  background-color: #e7f5ff;
+  border-radius: 0.9rem;
+  font-size: 1.8rem;
+  color: #212529;
+}
+.input-section {
+  background-color: #e7f5ff;
+  border-radius: 0.9rem;
+}
+.input-section button {
+  border-radius: 0.9rem;
+  background-color: #e7f5ff;
+  border: none;
+  padding: 0.5rem 0rem;
+  padding-left: 1rem;
+}
+
+::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+  font-size: 1.8rem;
+  color: #868e96;
+}
+/* -------------------------
+           HEADING ALPHA
+------------------------------------ */
+.heading-alpha {
+  margin: 1.2rem 1.8rem;
+  background-color: #ffffff;
+  padding: 2.4rem 7.2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.heading-alpha img {
+  width: 80%;
+}
+.heading-alpha .big {
+  width: 50%;
+}
+
+.alpha-img-box {
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.alpha-img-box a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  color: #212529;
+}
+/* -------------------------
+           SECTION-BANNER
+------------------------------------ */
+.section-banner {
+  margin: 1.2rem 1.8rem;
+  background-image: url(../IMAGES/full-banner/causorelcarrosuol.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 26.5rem;
+  position: relative;
+}
+.section-banner button {
+  border: none;
+}
+.btn {
+  height: 2rem;
+  width: 2rem;
+  color: #adb5bd;
+  background-color: #fff;
+  padding: 3.2rem 1rem;
+  box-shadow: 0 0 0.5rem 0.1rem #21252919;
+}
+.right-chevron,
+.left-chevron {
+  position: absolute;
+  transform: translate(0, -50%);
+}
+.left-chevron {
+  left: 0;
+  top: 50%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.right-chevron {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  top: 50%;
+  right: 0;
+}
+
+/* -------------------------
+          MAIN
+------------------------------------ */
+main {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  column-gap: 1.8rem;
+  margin: 0 1.8rem;
+}
+/* -------------------------
+           SECTION ELECTRONICS
+------------------------------------ */
+.section-electronics {
+  margin: 1.2rem 0rem;
+  background-color: #ffffff;
+  padding: 2.4rem;
+  overflow: hidden;
+}
+.section-electronics h2,
+.section-new h2 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.03rem;
+  padding: 1.8rem 0;
+  font-family: sans-serif;
+}
+.section-electronics h2 .electronics-blue-btn,
+.section-new h2 .electronics-blue-btn {
+  background-color: #1864ab;
+  padding: 0.5rem;
+  color: #ffff;
+  border-radius: 50%;
+}
+.electronics-product-box {
+  display: flex;
+  gap: 2.4rem;
+  position: relative;
+}
+
+.electronics-product-box div {
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+  border: 1px solid #adb5bd89;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  gap: 0.3rem;
+}
+.electronics-product-box img {
+  width: 100%;
+}
+.electronics-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, 50%);
+}
+.electronics-product-box img:hover {
+  transform: scale(1.04);
+}
+.electronics-product-box div span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+}
+.electronics-product-box div p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #212529;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+/* -------------------------
+ASIDE
+------------------------------------ */
+aside img {
+  width: 100%;
+}
+/* -------------------------
+           SECTION DONATION 
+           ------------------------------------ */
+.banner-donation {
+  margin: 1.2rem 1.8rem;
+  background-image: url(../IMAGES/flipkartdonate.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 26.5rem;
+  position: relative;
+}
+/* -------------------------
+SECTION NEW
+------------------------------------ */
+.section-new {
+  margin: 1.2rem 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.8rem;
+}
+.may-like-box,
+.top-rated-box,
+.mobiles-to-check-box {
+  background-color: #ffffff;
+}
+.new-product-box-1,
+.new-product-box-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+}
+.new-product-box-2 {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+.new-product-box-2 a {
+  padding: 1rem;
+}
+.new-product-box-1 img,
+.new-product-box-2 img,
+.new-product-box-3 img {
+  width: 100%;
+  padding: 1rem;
+}
+.new-product-box-1 img:hover,
+.new-product-box-2 img:hover,
+.new-product-box-3 img:hover {
+  transform: scale(1.05);
+}
+
+.new-product-box-2 .long {
+  grid-row: 1 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #adb5bd89;
+}
+.may-like-box,
+.top-rated-box,
+.mobiles-to-check-box {
+  padding: 2.4rem;
+  padding-top: 0;
+}
+.top-rated-box h2 {
+  border-bottom: 1px solid #adb5bd89;
+}
+.new-product-box-1 div,
+.new-product-box-3 div {
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+  border: 1px solid #adb5bd89;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  gap: 0.3rem;
+}
+.new-product-box-2 a {
+  text-decoration: none;
+}
+.new-product-box-1 span,
+.new-product-box-2 span,
+.new-product-box-3 span {
+  color: #212529;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.new-product-box-1 p,
+.new-product-box-3 p {
+  color: #2f9e44;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.new-product-box-2 p {
+  color: #212529;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+.new-product-box-2 p s {
+  color: #868e96;
+}
+.new-product-box-2 em {
+  font-style: normal;
+  color: #2f9e44;
+}
+.new-product-box-2 .long-2 {
+  border-bottom: 1px solid #adb5bd89;
+}
+/* -------------------------
+           SECTION ADVERTISEMENT 
+           ------------------------------------ */
+.section-advertisement {
+  margin: 1.2rem 1.8rem;
+}
+.advertisement-box {
+  margin: 1.2rem 1.8rem;
+  background-image: url(../IMAGES/axisbankoffer.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 26.5rem;
+}
+/* -------------------------
+SECTION STORIES
+------------------------------------ */
+.section-stories {
+  margin: 1.2rem 1.8rem;
+}
+.story-box {
+  font-size: 1.4rem;
+}
+.story-box a {
+  text-decoration: none;
+  color: #868e96;
+  padding: 0 0.8rem;
+  border-left: 1px solid #adb5bd;
+  border-right: 1px solid #adb5bd;
+  line-height: 1.8;
+}
+/* -------------------------
+SECTION FOOTER
+------------------------------------ */
+footer {
+  background-color: #28282b;
+  padding: 2.4rem 4.8rem;
+}
+.footer-box {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #868e96c3;
+}
+.footer-box h4 {
+  font-weight: 300;
+  color: #adb5bd;
+  font-size: 1.4rem;
+}
+.footer-box-1 a,
+.footer-box-2 a,
+.footer-box-3 a,
+.footer-box-4 a,
+.footer-box-5 a,
+.footer-box-6 a {
+  display: block;
+  text-decoration: none;
+  color: #ffff;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin: 0.8rem 0;
+  font-size: 1.4rem;
+}
+.footer-box-1 a:hover,
+.footer-box-2 a:hover,
+.footer-box-3 a:hover,
+.footer-box-4 a:hover,
+.footer-box-5 a:hover,
+.footer-box-6 a:hover {
+  text-decoration: underline;
+}
+.footer-box-4 {
+  border-right: 1px solid #868e96;
+}
+
+.footer-box-5,
+.footer-box-6 {
+  padding-left: 1.8rem;
+}
+.footer-box-5 h4,
+.footer-box-6 h4 {
+  margin-bottom: 0.8rem;
+}
+.footer-box p {
+  color: #ffff;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+.footer-box-6 a {
+  font-size: 1.2rem;
+  color: #339af0;
+  font-weight: 300;
+}
+.last {
+  color: #868e96;
+  font-size: 1.4rem;
+  margin-top: 2.4rem;
+}
